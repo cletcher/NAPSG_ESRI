@@ -1,0 +1,39 @@
+
+export eoDest=/Users/charles.letcher/Documents/cwl/esriOpsDash/buildFiles/
+export eoDestDev=/Users/charles.letcher/Documents/cwl/esriOpsDash/buildFiles/vortex_web_app
+export eoDestProd=/Users/charles.letcher/Documents/cwl/esriOpsDash/buildFiles/vortex_web_app_prod
+export eoDestTest=/Users/charles.letcher/Documents/cwl/esriOpsDash/buildFiles/
+
+
+export eoAppDev=/Users/charles.letcher/Documents/GitHub/esri-dashboard/dashboards/vortex_web_app
+export eoAppProd=/Users/charles.letcher/Documents/GitHub/esri-dashboard/dashboards/vortex_web_app_prod
+export eoAppTest=/Users/charles.letcher/Documents/cwl/esriOpsDash/sourceFiles/test
+
+export eoDestDocker=/Users/charles.letcher/Documents/cwl/esriOpsDash/buildFiles/Dockerfile
+export eoDocker=/Users/charles.letcher/Documents/cwl/esriOpsDash/sourceFiles/local/Dockerfile
+
+export eoDestHttpd=/Users/charles.letcher/Documents/cwl/esriOpsDash/buildFiles/httpd.conf
+export eoHttpd=/Users/charles.letcher/Documents/cwl/esriOpsDash/sourceFiles/local/httpd.conf
+
+export eoCerts=/Users/charles.letcher/Documents/cwl/esriOpsDash/sourceFiles/server.*
+
+#remember: change the build in sourceFiles/local/Dockerfile
+rm -r $eoDest
+mkdir $eoDest
+cp -a $eoCerts $eoDest
+cp -a $eoAppDev $eoDestDev
+cp -a $eoAppProd $eoDestProd
+cp -a $eoAppTest $eoDestTest
+cp -a $eoDocker $eoDestDocker
+cp -a $eoHttpd $eoDestHttpd
+
+cd $eoDest
+ls
+
+cat $eoDest
+echo $eoDest
+read -p "Review build files - Press [Enter] key to continue..."
+cat $eoDestDocker
+#read -p "Review Dockerfile - Press [Enter] key to continue..."
+cat $eoDestHttpd
+#read -p "review Httpd - Press [Enter] key to continue..."

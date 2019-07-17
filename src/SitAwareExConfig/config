@@ -1,0 +1,1901 @@
+{
+  "geocodeService": {
+    "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+  },
+  "enableRouting": true,
+  "bufferRange": {
+    "minimum": 0,
+    "_default": 0,
+    "maximum": 100
+  },
+  "distanceUnits": "miles",
+  "distanceSettings": {
+    "miles": 9035,
+    "kilometers": 9036,
+    "feet": 9002,
+    "meters": 9001,
+    "yards": 9037,
+    "nauticalMiles": 9030
+  },
+  "maxDistance": "80",
+  "defaultZoomLevel": 13,
+  "themes": [
+    {
+      "id": 0,
+      "name": "Safety and Security",
+      "layers": [
+        "Local_Emergency_Operations_Centers_EOC_2638",
+        "State_Emergency_Operations_Centers_EOC_5033",
+        "PSAP_911_Service_Area_Boundaries_8010",
+        "EPA_Emergency_Response_ER_Risk_Management_Plan_RMP_Facilities_3408"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Food, Water, Sheltering",
+      "layers": [
+        "Private_Schools_8479",
+        "Public_Schools_9070",
+        "Colleges_and_Universities_5880",
+        "Supplemental_Colleges_8615"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Health and Medical",
+      "layers": [
+        "Veterans_Health_Administration_Medical_Facilities_4831",
+        "Hospitals_1318",
+        "NursingHomes_6014",
+        "Urgent_Care_Facilities_2339",
+        "Public_Health_Departments_33",
+        "DialysisCenters_9231",
+        "EMS_Stations_241",
+        "Day_Care_Centers_9569"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Energy (Power & Fuel)",
+      "layers": [
+        "Electric_Power_Transmission_Lines_3554",
+        "PowerPlants_4394",
+        "BiodieselPlants_339",
+        "Oil_and_Natural_Gas_Platforms_390",
+        "Petroleum_Terminals_1_8207",
+        "Oil_and_Natural_Gas_Fields_890",
+        "Petroleum_Ports_4162"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Communications",
+      "layers": [
+        "Cellular_Towers_4049",
+        "FM_Transmission_Towers_8655",
+        "AM_Transmission_Towers_4732",
+        "Microwave_Service_Towers_7582",
+        "TV_Analog_Station_Transmitters_7873",
+        "TV_Digital_Station_Transmitters_3914",
+        "TV_Broadcast_Contours_7300",
+        "Cellular_Service_Areas_2187"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Transportation",
+      "layers": [
+        "National_Bridge_Inventory_9403",
+        "Intermodal_Transit_Facilities_IPCD_9564",
+        "Amtrak_Stations_6270",
+        "Railroad_Bridges_6200",
+        "Airports_5738",
+        "Public_Transit_Routes_3802",
+        "Natural_Gas_Liquid_Pipelines_4772",
+        "Interstate_Intrastate_Natural_Gas_Pipelines_2985",
+        "Crude_Oil_Pipelines_7965",
+        "Petroleum_Products_Pipelines_962",
+        "SUBMARINE_PIPELINE_201",
+        "Overhead_Pipeline_2614"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Hazards",
+      "layers": [
+        "CAFOs_per_County_8374",
+        "Earthquake_Hazard_714",
+        "Flood_Hazard_8260",
+        "Hazmat_Hazard_4899",
+        "Hurricane_Hazard_2146",
+        "Storm_Hazard_1581",
+        "Tornado_Hazard_8808",
+        "Tsunami_Hazard_5489",
+        "Volcano_Hazard_9988",
+        "Wildfire_Hazard_4037"
+      ]
+    }
+  ],
+  "tabs": [
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Cellular Towers",
+      "layers": "Cellular_Towers_4049",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Cellular_Towers/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - FM Transmission Towers",
+      "layers": "FM_Transmission_Towers_8655",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/FM_Transmission_Towers/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - AM Transmission Towers",
+      "layers": "AM_Transmission_Towers_4732",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/AM_Transmission_Towers/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Microwave Service Towers",
+      "layers": "Microwave_Service_Towers_7582",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Microwave_Service_Towers/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - TV Analog Station Transmitters",
+      "layers": "TV_Analog_Station_Transmitters_7873",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/TV_Analog_Station_Transmitters/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - TV Digital Station Transmitters",
+      "layers": "TV_Digital_Station_Transmitters_3914",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/TV_Digital_Station_Transmitters/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - FDIC Insured Banks",
+      "layers": "FDIC_InsuredBanks_664",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/FDIC_InsuredBanks/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - PSAP 911 Service Area Boundaries",
+      "layers": "PSAP_911_Service_Area_Boundaries_8010",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/PSAP_911_Service_Area_Boundaries/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID_1",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - TV Broadcast Contours",
+      "layers": "TV_Broadcast_Contours_7300",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/TV_Broadcast_Contours/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Cellular Service Areas",
+      "layers": "Cellular_Service_Areas_2187",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Cellular_Service_Areas/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Power Plants",
+      "layers": "PowerPlants_4394",
+      "advStat": {
+        "url": "https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/PowerPlants/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Oil and Natural Gas Platforms",
+      "layers": "Oil_and_Natural_Gas_Platforms_390",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Oil_and_Natural_Gas_Platforms/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Biodiesel Plants",
+      "layers": "BiodieselPlants_339",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/BiodieselPlants/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Petroleum Terminals",
+      "layers": "Petroleum_Terminals_1_8207",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Petroleum_Terminals_1/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Electric Power Transmission Lines",
+      "layers": "Electric_Power_Transmission_Lines_3554",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Electric_Power_Transmission_Lines/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Natural Gas Liquid Pipelines",
+      "layers": "Natural_Gas_Liquid_Pipelines_4772",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Natural_Gas_Liquid_Pipelines/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "FID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Natural Gas Interstate and Intrastate Pipelines",
+      "layers": "Interstate_Intrastate_Natural_Gas_Pipelines_2985",
+      "advStat": {
+        "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Interstate_Intrastate_Natural_Gas_Pipelines/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Crude Oil Pipelines",
+      "layers": "Crude_Oil_Pipelines_7965",
+      "advStat": {
+        "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Crude_Oil_Pipelines/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Petroleum Products Pipelines",
+      "layers": "Petroleum_Products_Pipelines_962",
+      "advStat": {
+        "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Petroleum_Products_Pipelines/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Submarine Pipeline Lines (USACE IENC)",
+      "layers": "SUBMARINE_PIPELINE_201",
+      "advStat": {
+        "url": "https://ienccloud.us/arcgis/rest/services/IENC_Feature_Classes/SUBMARINE_PIPELINE/MapServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Overhead Pipeline Lines (USACE IENC)",
+      "layers": "Overhead_Pipeline_2614",
+      "advStat": {
+        "url": "https://ienccloud.us/arcgis/rest/services/IENC_Feature_Classes/Overhead_Pipeline/MapServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Oil and Natural Gas Fields",
+      "layers": "Oil_and_Natural_Gas_Fields_890",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Oil_and_Natural_Gas_Fields/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data- Public Refrigerated Warehouses",
+      "layers": "Public_Refrigerated_Warehouses_1825",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Refrigerated_Warehouses/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Live Data - Saber Business Disruptions",
+      "layers": "Saber_Business_Disruptions_Live_Feed_2961",
+      "advStat": {
+        "url": "https://services.arcgis.com/DO4gTjwJVIJ7O9Ca/arcgis/rest/services/Saber_Business_Disruptions_Live_Feed/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - National Shelter System Facilities",
+      "layers": "National_Shelter_System_Facilities_207",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/National_Shelter_System_Facilities/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Solid Waste Landfill Facilities",
+      "layers": "Solid_Waste_Landfill_Facilities_2881",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Solid_Waste_Landfill_Facilities/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - EPA Emergency Response (ER) Risk Management Plan (RMP) Facilities",
+      "layers": "EPA_Emergency_Response_ER_Risk_Management_Plan_RMP_Facilities_3408",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/EPA_Emergency_Response_ER_Risk_Management_Plan_RMP_Facilities/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "FID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Superfund National Priorities List (NPL) Sites with Status Information",
+      "layers": "Superfund_National_Priorities_List__NPL__Sites_with_Status_Information_1064",
+      "advStat": {
+        "url": "https://services.arcgis.com/cJ9YHowT8TU7DUyn/arcgis/rest/services/Superfund_National_Priorities_List_(NPL)_Sites_with_Status_Information/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "ObjectId2",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Construction Minerals Operations",
+      "layers": "Construction_Minerals_Operations_706",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Construction_Minerals_Operations/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "FID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Veterans Health Administration Medical Facilities",
+      "layers": "Veterans_Health_Administration_Medical_Facilities_4831",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Veterans_Health_Administration_Medical_Facilities/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID_1",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Hospitals",
+      "layers": "Hospitals_1318",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Hospitals/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Nursing Homes",
+      "layers": "NursingHomes_6014",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/NursingHomes/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Urgent Care Facilities",
+      "layers": "Urgent_Care_Facilities_2339",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Urgent_Care_Facilities/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Public Health Departments",
+      "layers": "Public_Health_Departments_33",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Health_Departments/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Dialysis Centers",
+      "layers": "DialysisCenters_9231",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/DialysisCenters/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "FID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Open Rx Pharmacies Feed",
+      "layers": "Open_Rx_Pharmacies_Feed_8336",
+      "advStat": {
+        "url": "https://services.arcgis.com/DO4gTjwJVIJ7O9Ca/arcgis/rest/services/Open_Rx_Pharmacies_Feed/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Fire Stations",
+      "layers": "Fire_Stations_6480",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Fire_Stations/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Emergency Medical Service (EMS) Stations",
+      "layers": "EMS_Stations_241",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/EMS_Stations/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Local Law Enforcement Locations",
+      "layers": "Local_Law_Enforcement_Locations_3559",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Local_Law_Enforcement_Locations/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Prison Boundaries",
+      "layers": "Prison_Boundaries_5137",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Prison_Boundaries/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "FID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Private Schools",
+      "layers": "Private_Schools_8479",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Private_Schools/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "FID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Public Schools",
+      "layers": "Public_Schools_9070",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Schools/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Colleges and Universities",
+      "layers": "Colleges_and_Universities_5880",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Colleges_and_Universities/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Supplemental Colleges",
+      "layers": "Supplemental_Colleges_8615",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Supplemental_Colleges/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Local Emergency Operations Centers (EOC)",
+      "layers": "Local_Emergency_Operations_Centers_EOC_2638",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Local_Emergency_Operations_Centers_EOC/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID_1",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - State Emergency Operations Centers (EOC)",
+      "layers": "State_Emergency_Operations_Centers_EOC_5033",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/State_Emergency_Operations_Centers_EOC/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "FID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Major State Government Buildings",
+      "layers": "Major_State_Government_Buildings_7336",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Major_State_Government_Buildings/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID_1",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - National Bridge Inventory",
+      "layers": "National_Bridge_Inventory_9403",
+      "advStat": {
+        "url": "https://maps.bts.dot.gov/services/rest/services/NTAD/National_Bridge_Inventory/MapServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Intermodal Terminal Facilities - Intermodal Transit Facilities (IPCD)",
+      "layers": "Intermodal_Transit_Facilities_IPCD_9564",
+      "advStat": {
+        "url": "https://maps.bts.dot.gov/services/rest/services/NTAD/Intermodal_Transit_Facilities_IPCD/MapServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Amtrak Stations",
+      "layers": "Amtrak_Stations_6270",
+      "advStat": {
+        "url": "https://maps.bts.dot.gov/services/rest/services/NTAD/Amtrak_Stations/MapServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Railroad Bridges",
+      "layers": "Railroad_Bridges_6200",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Railroad_Bridges/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "FID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Aircraft Landing Facilities",
+      "layers": "Airports_5738",
+      "advStat": {
+        "url": "https://maps.bts.dot.gov/services/rest/services/NTAD/Airports/MapServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Petroleum Ports",
+      "layers": "Petroleum_Ports_4162",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Petroleum_Ports/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Public Transit Routes",
+      "layers": "Public_Transit_Routes_3802",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Public_Transit_Routes/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Mobile Home Parks",
+      "layers": "Mobile_Home_Parks_6180",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Mobile_Home_Parks/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - Child Care Centers",
+      "layers": "Day_Care_Centers_9569",
+      "advStat": {
+        "url": "https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/Day_Care_Centers/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Live Data - RSOE EDIS REST Service Hosed Feature Layer Public View",
+      "layers": "RSOE_EDIS_REST_Service_Hosed_Feature_Layer_Public_View_6606",
+      "advStat": {
+        "url": "https://services1.arcgis.com/2iUE8l8JKrP2tygQ/arcgis/rest/services/RSOE_EDIS_REST_Service_Hosed_Feature_Layer_Public_View/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - CDC’s Social Vulnerability Index (SVI) - 2016",
+      "layers": "CDC’s_Social_Vulnerability_Index_2016_7498",
+      "advStat": {
+        "url": "https://services.arcgis.com/0ZRg6WRC7mxSLyKX/arcgis/rest/services/CDC’s_Social_Vulnerability_Index_2016/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Base Data - USA Counties",
+      "layers": "USA_Counties_2016",
+      "advStat": {
+        "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Counties/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "FID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Animal Disease Outbreak Hazard",
+      "layers": "CAFOs_per_County_8374",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/CAFOs_per_County/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Earthquake Hazard",
+      "layers": "Earthquake_Hazard_714",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Earthquake_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Flood Hazard",
+      "layers": "Flood_Hazard_8260",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Flood_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Hazardous Material Release Hazard",
+      "layers": "Hazmat_Hazard_4899",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Hazmat_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Hurricane Hazard",
+      "layers": "Hurricane_Hazard_2146",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Hurricane_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Major Storm Hazard",
+      "layers": "Storm_Hazard_1581",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Storm_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Tornado Hazard",
+      "layers": "Tornado_Hazard_8808",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Tornado_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Tsunami Hazard",
+      "layers": "Tsunami_Hazard_5489",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Tsunami_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Volcanic Eruption Hazard",
+      "layers": "Volcano_Hazard_9988",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Volcano_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Wildfire Hazard",
+      "layers": "Wildfire_Hazard_4037",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Wildfire_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Airplane Crash Hazard",
+      "layers": "AirplaneCrash_Hazard_5072",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/AirplaneCrash_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Dam Failure Hazard",
+      "layers": "DamFailure_Hazard_5297",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/DamFailure_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Levee Failure Hazard",
+      "layers": "LeveeFailure_Hazard_8009",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/LeveeFailure_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Mine Accident Hazard",
+      "layers": "MineAccident_Hazard_2357",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/MineAccident_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Radiological Release Hazard",
+      "layers": "RadiologicalRelease_Hazard_7688",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/RadiologicalRelease_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Train Derailment Hazard",
+      "layers": "TrainDerailment_Hazard_6917",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/TrainDerailment_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Landslide Hazard",
+      "layers": "Landslide_Hazard_8505",
+      "advStat": {
+        "url": "https://services.arcgis.com/XG15cJAlne2vxtgt/arcgis/rest/services/Landslide_Hazard/FeatureServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Alert Points",
+      "layers": "IPAWS_7815_0",
+      "advStat": {
+        "url": "https://gii.dhs.gov/ags/rest/services/GEP/IPAWS/MapServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "GEPFS.GES.InfoPointGeom.OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "Alert Areas",
+      "layers": "IPAWS_7815_1",
+      "advStat": {
+        "url": "https://gii.dhs.gov/ags/rest/services/GEP/IPAWS/MapServer/1",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "GEPFS.GES.InfoAreaGeom.OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "ATSDR Hazardous Waste Sites on National Priorities List",
+      "layers": "superfund_atsdr_hazardous_waste_site_ciesin_mod_v2_8135_0",
+      "advStat": {
+        "url": "https://sedac.ciesin.columbia.edu/arcgis/rest/services/sedac/superfund_atsdr_hazardous_waste_site_ciesin_mod_v2/MapServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID_1",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "All ECHO Facilities",
+      "layers": "Facilities_2825_0",
+      "advStat": {
+        "url": "https://echo.epa.gov/arcgis/rest/services/ECHO/Facilities/MapServer/0",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "AIR Facilities",
+      "layers": "Facilities_2825_1",
+      "advStat": {
+        "url": "https://echo.epa.gov/arcgis/rest/services/ECHO/Facilities/MapServer/1",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "CWA Facilities",
+      "layers": "Facilities_2825_2",
+      "advStat": {
+        "url": "https://echo.epa.gov/arcgis/rest/services/ECHO/Facilities/MapServer/2",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "label": "",
+      "type": "summary",
+      "layerTitle": "RCRA Facilities",
+      "layers": "Facilities_2825_3",
+      "advStat": {
+        "url": "https://echo.epa.gov/arcgis/rest/services/ECHO/Facilities/MapServer/3",
+        "stats": {
+          "tabCount": true,
+          "count": [
+            {
+              "value": 0,
+              "expression": "OBJECTID",
+              "label": "COUNT"
+            }
+          ],
+          "sum": [
+            {
+              "value": 0,
+              "expression": "FAC_LAT",
+              "label": "Latitude"
+            },
+            {
+              "value": 0,
+              "expression": "FAC_LONG",
+              "label": "Longitude"
+            },
+            {
+              "value": 0,
+              "expression": "FAC_PERCENT_MINORITY",
+              "label": "Percent Minority"
+            },
+            {
+              "value": 0,
+              "expression": "FAC_POPULATION_DENSITY",
+              "label": "Population Density"
+            },
+            {
+              "value": 0,
+              "expression": "RCRA_QTRS_IN_SNC",
+              "label": "Quarters in SNC"
+            },
+            {
+              "value": 0,
+              "expression": "RCRA_QTRS_IN_NC",
+              "label": "RCRA - Quarters in Non-Compliance"
+            },
+            {
+              "value": 0,
+              "expression": "RCRA_INSP_CNT",
+              "label": "Inspection Count"
+            },
+            {
+              "value": 0,
+              "expression": "RCRA_DAYS_LAST_INSPECTION",
+              "label": "Days Since Last Inspection"
+            },
+            {
+              "value": 0,
+              "expression": "RCRA_IEA_CNT",
+              "label": "Informal Enforcement Actions"
+            },
+            {
+              "value": 0,
+              "expression": "RCRA_FEA_CNT",
+              "label": "Federal Enforcement Action Count"
+            },
+            {
+              "value": 0,
+              "expression": "RCRA_PENALTIES",
+              "label": "RCRA - Penalties"
+            },
+            {
+              "value": 0,
+              "expression": "FAC_TRI_ON_SITE_RELEASES",
+              "label": "TRI On-Site Releases"
+            },
+            {
+              "value": 0,
+              "expression": "CURRENT_VIO_CNT",
+              "label": "Current Violation Count"
+            },
+            {
+              "value": 0,
+              "expression": "FAC_TRI_OFF_SITE_TRANSFERS",
+              "label": "TRI - Off Site Transfers"
+            },
+            {
+              "value": 0,
+              "expression": "FAC_TRI_LAND_RELEASES",
+              "label": "TRI - Land Releases"
+            },
+            {
+              "value": 0,
+              "expression": "PCTILE_PCTPRE1960_US",
+              "label": "Pctile Pctpre1960 US"
+            },
+            {
+              "value": 0,
+              "expression": "PCTILE_DPM_US",
+              "label": "Pctile Dpm US"
+            },
+            {
+              "value": 0,
+              "expression": "PCTILE_CANCER_US",
+              "label": "Pctile Cancer US"
+            },
+            {
+              "value": 0,
+              "expression": "PCTILE_RESP_US",
+              "label": "Pctile Resp US"
+            },
+            {
+              "value": 0,
+              "expression": "PCTILE_TRAFFIC_SCORE_US",
+              "label": "Pctile Traffic Score US"
+            }
+          ]
+        },
+        "fieldOrder": [
+          {
+            "fieldName": "FAC_LAT",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "FAC_LONG",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "FAC_PERCENT_MINORITY",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "FAC_POPULATION_DENSITY",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "RCRA_QTRS_IN_SNC",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "RCRA_QTRS_IN_NC",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "RCRA_INSP_CNT",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "RCRA_DAYS_LAST_INSPECTION",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "RCRA_IEA_CNT",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "RCRA_FEA_CNT",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "RCRA_PENALTIES",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "FAC_TRI_ON_SITE_RELEASES",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "CURRENT_VIO_CNT",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "FAC_TRI_OFF_SITE_TRANSFERS",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "FAC_TRI_LAND_RELEASES",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "PCTILE_PCTPRE1960_US",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "PCTILE_DPM_US",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "PCTILE_CANCER_US",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "PCTILE_RESP_US",
+            "fieldType": "sum"
+          },
+          {
+            "fieldName": "PCTILE_TRAFFIC_SCORE_US",
+            "fieldType": "sum"
+          }
+        ]
+      }
+    }
+  ],
+  "csvAllFields": true,
+  "summaryDisplayEnabled": true,
+  "incidentLabel": "Incident",
+  "locateIncidentLabel": "Locate Incident",
+  "bufferLabel": "Buffer Distance",
+  "disableVisibilityManagement": false,
+  "saveEnabled": false,
+  "savePoints": false,
+  "drawGeodesic": false,
+  "saveLines": false,
+  "savePolys": false,
+  "snapshotEnabled": true,
+  "reportEnabled": false,
+  "reportSettings": {
+    "printTaskURL": "https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+    "footnote": "",
+    "logo": "${appPath}/widgets/SituationAwareness/images/defaultLogo.png",
+    "textColor": "#0f96cc"
+  }
+}

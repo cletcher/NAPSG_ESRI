@@ -1,0 +1,5 @@
+
+aws s3 sync /Users/charlesletcher/Documents/GitHub/NAPSG_ESRI/goodApp/MutualAid s3://sitaware-webapp --delete --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
+
+echo https://d302inpb3y6w1k.cloudfront.net/version.html
+

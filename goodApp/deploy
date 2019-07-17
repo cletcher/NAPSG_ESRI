@@ -1,0 +1,5 @@
+# aws s3 rm s3://sitaware.coloredeggs.com --recursive
+# aws s3 cp /Users/charlesletcher/Documents/GitHub/NAPSG_ESRI/goodApp/MutualAid s3://sitaware.coloredeggs.com --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --recursive
+
+aws s3 sync ./MutualAid s3://sitaware.coloredeggs.com --delete --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
+

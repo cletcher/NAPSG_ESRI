@@ -109,9 +109,6 @@
   text-align: center;
   color: #ffffff;
   padding: 0px;
-/*  added by Charles 7/11/2019  */
-  overflow: auto;
-  overflow-y: hidden;
   
 }
 
@@ -286,7 +283,16 @@ margin-top:10px
     width: 125px;
     color: black;
 }
+
 /* TABS */
+/* July 15, 2019 Charles Letcher
+  /widgets/SituationAwareness/css/style.css
+*/
+::-webkit-scrollbar {
+  height: 14px;              /* height of horizontal scrollbar */
+  width: 14px;               /* width of vertical scrollbar */
+  border: 1px solid #000000;
+}
 
 .jimu-widget-SAT .SA_SAT_tabs {
   position: absolute;

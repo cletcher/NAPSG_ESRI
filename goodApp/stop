@@ -1,0 +1,2 @@
+docker container stop napsg
+docker container rm napsg
