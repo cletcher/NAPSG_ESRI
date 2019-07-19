@@ -1,3 +1,11 @@
+/* July 15, 2019 Charles Letcher
+  /widgets/SituationAwareness/css/style.css
+*/
+::-webkit-scrollbar {
+  height: 14px;              /* height of horizontal scrollbar */
+  width: 14px;               /* width of vertical scrollbar */
+  border: 1px solid #000000;
+}
 
 .jimu-widget-SAT {
   color: #ffffff !important;
@@ -284,14 +292,6 @@ margin-top:10px
     color: black;
 }
 /* TABS */
-/* July 15, 2019 Charles Letcher
-  /widgets/SituationAwareness/css/style.css
-*/
-::-webkit-scrollbar {
-  height: 14px;              /* height of horizontal scrollbar */
-  width: 14px;               /* width of vertical scrollbar */
-  border: 1px solid #000000;
-}
 
 .jimu-widget-SAT .SA_SAT_tabs {
   position: absolute;

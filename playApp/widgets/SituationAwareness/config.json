@@ -19,6 +19,7 @@
   },
   "maxDistance": "80",
   "defaultZoomLevel": 13,
+  "themes": [],
   "tabs": [],
   "csvAllFields": true,
   "summaryDisplayEnabled": true

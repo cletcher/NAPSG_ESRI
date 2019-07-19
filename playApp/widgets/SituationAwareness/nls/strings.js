@@ -1,6 +1,7 @@
 ﻿define({
   root: ({
-    _widgetLabel: "Situation Awareness",
+        _widgetLabel: "Situation Awareness",
+      incidentTheme:"Lifeline",
     locate_incident: "Locate Incident",
     reverse_geocoded_address: "Closest Address",
     reverse_geocoded_error: "Not available",

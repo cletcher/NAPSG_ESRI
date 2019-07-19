@@ -1,7 +1,9 @@
 ﻿define({
   root: ({
     tabs_section_Label: "Tabs",
-    addTab: "Add Tab",
+        addTab: "Add Tab",
+        theme_options: "Themes",
+        addTheme:"Add Theme",
     layerName: "Layer",
     layerType: "Analysis Type",
     layerLabel: "Label",

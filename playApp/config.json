@@ -2,32 +2,29 @@
   "theme": {
     "name": "FoldableTheme",
     "styles": [
-      "yellow",
       "default",
       "black",
       "blue",
       "cyan",
       "green",
       "purple",
-      "red"
+      "red",
+      "yellow"
     ],
     "version": "2.11",
     "sharedTheme": {
       "isPortalSupport": true,
       "useHeader": false,
       "useLogo": false
-    },
-    "customStyles": {
-      "mainBackgroundColor": "#6396bc"
     }
   },
   "portalUrl": "https://napsg.maps.arcgis.com",
   "appId": "",
   "authorizedCrossOriginDomains": [],
-  "title": "Calculate impacts of a hazard on  your community.",
-  "subtitle": "Powered by the National Alliance for Public Safety (NAPSG) Foundation",
+  "title": "New App",
+  "subtitle": "test Situational Awareness Widget with Lifeline",
   "keepAppState": true,
-  "logo": "",
+  "logo": "images/app-logo.png",
   "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
   "links": [],
   "widgetOnScreen": {
@@ -38,7 +35,7 @@
           "left": 0,
           "top": 0,
           "right": 0,
-          "height": 40,
+          "height": 80,
           "relativeTo": "browser"
         },
         "version": "2.11",
@@ -65,9 +62,7 @@
         },
         "version": "2.11",
         "id": "widgets_Search_Widget_3",
-        "name": "Search",
-        "config": "configs/Search/config_widgets_Search_Widget_3.json",
-        "visible": false
+        "name": "Search"
       },
       {
         "uri": "widgets/Coordinate/Widget",
@@ -89,7 +84,6 @@
         "placeholderIndex": 1,
         "id": "_5",
         "name": "SituationAwareness",
-        "label": "Calculate Impacts",
         "version": "2.11",
         "closeable": true,
         "uri": "widgets/SituationAwareness/Widget",
@@ -102,14 +96,7 @@
           "relativeTo": "map"
         },
         "placeholderIndex": 1,
-        "id": "_6",
-        "name": "LayerList",
-        "label": "Explore Hazards",
-        "version": "2.11",
-        "closeable": true,
-        "uri": "widgets/LayerList/Widget",
-        "config": "configs/LayerList/config__6.json",
-        "icon": "configs\\LayerList\\icon__6.png"
+        "id": "_6"
       },
       {
         "position": {
@@ -117,14 +104,8 @@
           "top": 45,
           "relativeTo": "map"
         },
-        "placeholderIndex": 1,
-        "id": "_7",
-        "name": "Search",
-        "label": "Choose your location",
-        "version": "2.11",
-        "closeable": true,
-        "uri": "widgets/Search/Widget",
-        "config": "configs/Search/config__7.json"
+        "placeholderIndex": 2,
+        "id": "_7"
       },
       {
         "position": {
@@ -132,13 +113,8 @@
           "top": 45,
           "relativeTo": "map"
         },
-        "placeholderIndex": 1,
-        "id": "_8",
-        "name": "LayerList",
-        "label": "Explore Additional Impacts",
-        "version": "2.11",
-        "closeable": true,
-        "uri": "widgets/LayerList/Widget"
+        "placeholderIndex": 3,
+        "id": "_8"
       },
       {
         "position": {
@@ -146,7 +122,7 @@
           "top": 45,
           "relativeTo": "map"
         },
-        "placeholderIndex": 1,
+        "placeholderIndex": 4,
         "id": "_9"
       },
       {
@@ -194,13 +170,13 @@
       },
       {
         "uri": "widgets/Splash/Widget",
+        "visible": false,
         "position": {
           "relativeTo": "browser"
         },
         "version": "2.11",
         "id": "widgets_Splash_Widget_14",
-        "name": "Splash",
-        "config": "configs/Splash/config_widgets_Splash_Widget_14.json"
+        "name": "Splash"
       },
       {
         "uri": "widgets/ZoomSlider/Widget",
@@ -215,6 +191,7 @@
       },
       {
         "uri": "widgets/ExtentNavigate/Widget",
+        "visible": false,
         "position": {
           "top": 190,
           "left": 7,
@@ -226,6 +203,7 @@
       },
       {
         "uri": "widgets/FullScreen/Widget",
+        "visible": false,
         "position": {
           "top": 150,
           "left": 7,
@@ -248,7 +226,7 @@
     "2D": true,
     "position": {
       "left": 0,
-      "top": 40,
+      "top": 80,
       "right": 0,
       "bottom": 0
     },
@@ -256,24 +234,8 @@
     "mapOptions": {},
     "id": "map",
     "portalUrl": "https://napsg.maps.arcgis.com",
-    "appProxy": {
-      "mapItemId": "2f56fbc0f3ea4f7bad5f91acf9962816",
-      "proxyItems": [
-        {
-          "sourceUrl": "https://livefeeds2.arcgis.com/arcgis/rest/services/NFIE/NationalWaterModel_Medium_Anomaly/MapServer",
-          "title": "Live Feed - National Water Model (10 Day Anomaly Forecast)",
-          "premium": true,
-          "consumeCredits": false,
-          "useProxy": false
-        },
-        {
-          "sourceUrl": "https://livefeeds2.arcgis.com/arcgis/rest/services/NFIE/NationalWaterModel_Short_Anomaly/MapServer",
-          "title": "Live Feed - National Water Model (Hourly Anomaly Forecast)",
-          "premium": true,
-          "consumeCredits": false,
-          "useProxy": false
-        }
-      ]
+    "mapRefreshInterval": {
+      "useWebMapRefreshInterval": true
     }
   },
   "widgetPool": {
@@ -293,427 +255,16 @@
         "version": "2.11",
         "id": "widgets_Legend_Widget_18",
         "name": "Legend",
-        "index": 2
+        "index": 0
       },
       {
-        "name": "AddData",
-        "version": "2.11",
-        "uri": "widgets/AddData/Widget",
-        "index": 3,
-        "id": "widgets_AddData_Widget_21"
-      },
-      {
-        "name": "EmergencyResponseGuide",
-        "version": "2.11",
-        "keepConfigAfterMapSwithched": false,
-        "uri": "widgets/EmergencyResponseGuide/Widget",
-        "config": "configs/EmergencyResponseGuide/config_widgets_EmergencyResponseGuide_Widget_29.json",
-        "index": 4,
-        "id": "widgets_EmergencyResponseGuide_Widget_29"
-      },
-      {
-        "name": "GridOverlay",
-        "version": "2.11",
-        "uri": "widgets/GridOverlay/Widget",
-        "index": 5,
-        "id": "widgets_GridOverlay_Widget_27"
-      },
-      {
-        "name": "Print",
-        "version": "2.11",
-        "uri": "widgets/Print/Widget",
-        "index": 6,
-        "id": "widgets_Print_Widget_26"
-      },
-      {
-        "name": "About",
-        "version": "2.11",
-        "uri": "widgets/About/Widget",
-        "config": "configs/About/config_widgets_About_Widget_30.json",
-        "index": 7,
-        "id": "widgets_About_Widget_30",
-        "label": "Directions"
-      },
-      {
-        "name": "About",
-        "label": "About_2",
-        "version": "2.11",
-        "uri": "widgets/About/Widget",
-        "index": 9,
-        "id": "widgets_About_Widget_31"
-      },
-      {
-        "name": "AddData",
-        "label": "Add Data_2",
-        "version": "2.11",
-        "uri": "widgets/AddData/Widget",
-        "index": 10,
-        "id": "widgets_AddData_Widget_32"
-      },
-      {
-        "name": "Analysis",
-        "version": "2.11",
-        "uri": "widgets/Analysis/Widget",
-        "index": 11,
-        "id": "widgets_Analysis_Widget_33"
-      },
-      {
-        "name": "BasemapGallery",
-        "version": "2.11",
-        "uri": "widgets/BasemapGallery/Widget",
-        "index": 12,
-        "id": "widgets_BasemapGallery_Widget_34"
-      },
-      {
-        "name": "BatchAttributeEditor",
-        "version": "2.11",
-        "uri": "widgets/BatchAttributeEditor/Widget",
-        "index": 13,
-        "id": "widgets_BatchAttributeEditor_Widget_35"
-      },
-      {
-        "name": "Bookmark",
-        "version": "2.11",
-        "uri": "widgets/Bookmark/Widget",
-        "index": 14,
-        "id": "widgets_Bookmark_Widget_36"
-      },
-      {
-        "name": "Chart",
-        "version": "2.11",
-        "uri": "widgets/Chart/Widget",
-        "index": 15,
-        "id": "widgets_Chart_Widget_37"
-      },
-      {
-        "name": "CoordinateConversion",
-        "version": "2.11",
-        "IsController": false,
-        "uri": "widgets/CoordinateConversion/Widget",
-        "index": 16,
-        "id": "widgets_CoordinateConversion_Widget_38"
-      },
-      {
-        "name": "CostAnalysis",
-        "version": "2.11",
-        "IsController": false,
-        "uri": "widgets/CostAnalysis/Widget",
-        "index": 17,
-        "id": "widgets_CostAnalysis_Widget_39"
-      },
-      {
-        "name": "DataAggregation",
-        "version": "2.11",
-        "IsController": false,
-        "uri": "widgets/DataAggregation/Widget",
-        "index": 18,
-        "id": "widgets_DataAggregation_Widget_40"
-      },
-      {
-        "name": "Directions",
-        "version": "2.11",
-        "uri": "widgets/Directions/Widget",
-        "index": 19,
-        "id": "widgets_Directions_Widget_41"
-      },
-      {
-        "name": "DistanceAndDirection",
-        "version": "2.11",
-        "keepConfigAfterMapSwithched": false,
-        "uri": "widgets/DistanceAndDirection/Widget",
-        "index": 20,
-        "id": "widgets_DistanceAndDirection_Widget_42"
-      },
-      {
-        "name": "DistrictLookup",
-        "version": "2.11",
-        "IsController": false,
-        "uri": "widgets/DistrictLookup/Widget",
-        "index": 21,
-        "id": "widgets_DistrictLookup_Widget_43"
-      },
-      {
-        "name": "Draw",
-        "version": "2.11",
-        "uri": "widgets/Draw/Widget",
-        "index": 22,
-        "id": "widgets_Draw_Widget_44"
-      },
-      {
-        "name": "Edit",
-        "version": "2.11",
-        "uri": "widgets/Edit/Widget",
-        "index": 23,
-        "id": "widgets_Edit_Widget_45"
-      },
-      {
-        "name": "Filter",
-        "version": "2.11",
-        "uri": "widgets/Filter/Widget",
-        "index": 24,
-        "id": "widgets_Filter_Widget_46"
-      },
-      {
-        "name": "GeoLookup",
-        "version": "2.11",
-        "uri": "widgets/GeoLookup/Widget",
-        "index": 25,
-        "id": "widgets_GeoLookup_Widget_47"
-      },
-      {
-        "name": "Geoprocessing",
-        "version": "2.11",
-        "uri": "widgets/Geoprocessing/Widget",
-        "index": 26,
-        "id": "widgets_Geoprocessing_Widget_48"
-      },
-      {
-        "name": "GridOverlay",
-        "label": "Grid Overlay_2",
-        "version": "2.11",
-        "uri": "widgets/GridOverlay/Widget",
-        "index": 27,
-        "id": "widgets_GridOverlay_Widget_49"
-      },
-      {
-        "name": "GriddedReferenceGraphic",
-        "version": "2.11",
-        "keepConfigAfterMapSwithched": true,
-        "uri": "widgets/GriddedReferenceGraphic/Widget",
-        "index": 28,
-        "id": "widgets_GriddedReferenceGraphic_Widget_50"
-      },
-      {
-        "name": "GroupFilter",
-        "version": "2.11",
-        "uri": "widgets/GroupFilter/Widget",
-        "index": 29,
-        "id": "widgets_GroupFilter_Widget_51"
-      },
-      {
-        "name": "ImageMeasurement",
-        "version": "2.11",
-        "uri": "widgets/ImageMeasurement/Widget",
-        "index": 30,
-        "id": "widgets_ImageMeasurement_Widget_52"
-      },
-      {
-        "name": "IncidentAnalysis",
-        "version": "2.11",
-        "uri": "widgets/IncidentAnalysis/Widget",
-        "index": 31,
-        "id": "widgets_IncidentAnalysis_Widget_53",
-        "position": {
-          "relativeTo": "map"
-        }
-      },
-      {
-        "name": "InfoSummary",
-        "version": "2.11",
-        "IsController": false,
-        "uri": "widgets/InfoSummary/Widget",
-        "index": 32,
-        "id": "widgets_InfoSummary_Widget_54"
-      },
-      {
-        "name": "Infographic",
-        "version": "2.11",
-        "uri": "widgets/Infographic/Widget",
-        "index": 33,
-        "id": "widgets_Infographic_Widget_55"
-      },
-      {
-        "name": "LayerList",
-        "label": "Layer List_3",
-        "version": "2.11",
         "uri": "widgets/LayerList/Widget",
-        "index": 34,
-        "id": "widgets_LayerList_Widget_56"
-      },
-      {
-        "name": "Legend",
-        "label": "Legend_2",
         "version": "2.11",
-        "uri": "widgets/Legend/Widget",
-        "index": 35,
-        "id": "widgets_Legend_Widget_57"
-      },
-      {
-        "name": "Measurement",
-        "version": "2.11",
-        "uri": "widgets/Measurement/Widget",
-        "index": 36,
-        "id": "widgets_Measurement_Widget_58"
-      },
-      {
-        "name": "NearMe",
-        "version": "2.11",
-        "IsController": false,
-        "uri": "widgets/NearMe/Widget",
-        "index": 37,
-        "id": "widgets_NearMe_Widget_59"
-      },
-      {
-        "name": "ObliqueViewer",
-        "version": "2.11",
-        "uri": "widgets/ObliqueViewer/Widget",
-        "index": 38,
-        "id": "widgets_ObliqueViewer_Widget_60"
-      },
-      {
-        "name": "ParcelDrafter",
-        "version": "2.11",
-        "IsController": false,
-        "uri": "widgets/ParcelDrafter/Widget",
-        "index": 39,
-        "id": "widgets_ParcelDrafter_Widget_61"
-      },
-      {
-        "name": "Print",
-        "label": "Print_2",
-        "version": "2.11",
-        "uri": "widgets/Print/Widget",
-        "index": 40,
-        "id": "widgets_Print_Widget_62"
-      },
-      {
-        "name": "PublicNotification",
-        "version": "2.11",
-        "IsController": false,
-        "uri": "widgets/PublicNotification/Widget",
-        "index": 41,
-        "id": "widgets_PublicNotification_Widget_63"
-      },
-      {
-        "name": "Query",
-        "version": "2.11",
-        "uri": "widgets/Query/Widget",
-        "index": 42,
-        "id": "widgets_Query_Widget_64"
-      },
-      {
-        "name": "RelatedTableCharts",
-        "version": "2.11",
-        "IsController": false,
-        "uri": "widgets/RelatedTableCharts/Widget",
-        "index": 43,
-        "id": "widgets_RelatedTableCharts_Widget_65"
-      },
-      {
-        "name": "ReportFeature",
-        "version": "2.11",
-        "uri": "widgets/ReportFeature/Widget",
-        "index": 44,
-        "id": "widgets_ReportFeature_Widget_66"
-      },
-      {
-        "name": "ReviewerDashboard",
-        "version": "2.11",
-        "uri": "widgets/ReviewerDashboard/Widget",
-        "index": 45,
-        "id": "widgets_ReviewerDashboard_Widget_67"
-      },
-      {
-        "name": "Screening",
-        "version": "2.11",
-        "IsController": false,
-        "uri": "widgets/Screening/Widget",
-        "index": 46,
-        "id": "widgets_Screening_Widget_68"
-      },
-      {
-        "name": "Search",
-        "label": "Search_3",
-        "version": "2.11",
-        "uri": "widgets/Search/Widget",
-        "index": 47,
-        "id": "widgets_Search_Widget_69",
-        "position": {
-          "relativeTo": "map"
-        }
-      },
-      {
-        "name": "Select",
-        "version": "2.11",
-        "uri": "widgets/Select/Widget",
-        "index": 48,
-        "id": "widgets_Select_Widget_70"
-      },
-      {
-        "name": "Share",
-        "version": "2.11",
-        "uri": "widgets/Share/Widget",
-        "index": 49,
-        "id": "widgets_Share_Widget_71"
-      },
-      {
-        "name": "SmartEditor",
-        "version": "2.11",
-        "uri": "widgets/SmartEditor/Widget",
-        "index": 50,
-        "id": "widgets_SmartEditor_Widget_72"
-      },
-      {
-        "name": "Stream",
-        "version": "2.11",
-        "uri": "widgets/Stream/Widget",
-        "index": 51,
-        "id": "widgets_Stream_Widget_73"
-      },
-      {
-        "name": "SuitabilityModeler",
-        "version": "2.11",
-        "uri": "widgets/SuitabilityModeler/Widget",
-        "index": 52,
-        "id": "widgets_SuitabilityModeler_Widget_74"
-      },
-      {
-        "name": "Summary",
-        "version": "2.11",
-        "uri": "widgets/Summary/Widget",
-        "index": 53,
-        "id": "widgets_Summary_Widget_75",
-        "position": {
-          "relativeTo": "map"
-        }
-      },
-      {
-        "name": "Swipe",
-        "version": "2.11",
-        "uri": "widgets/Swipe/Widget",
-        "index": 54,
-        "id": "widgets_Swipe_Widget_76",
-        "position": {
-          "relativeTo": "map"
-        }
-      },
-      {
-        "name": "ThreatAnalysis",
-        "version": "2.11",
-        "keepConfigAfterMapSwithched": false,
-        "uri": "widgets/ThreatAnalysis/Widget",
-        "index": 55,
-        "id": "widgets_ThreatAnalysis_Widget_77"
-      },
-      {
-        "name": "TimeSlider",
-        "version": "2.11",
-        "uri": "widgets/TimeSlider/Widget",
-        "index": 56,
-        "id": "widgets_TimeSlider_Widget_78",
-        "position": {
-          "relativeTo": "map"
-        }
-      },
-      {
-        "name": "Visibility",
-        "version": "2.11",
-        "uri": "widgets/Visibility/Widget",
-        "index": 57,
-        "id": "widgets_Visibility_Widget_79"
+        "id": "widgets_LayerList_Widget_19",
+        "name": "LayerList",
+        "index": 1
       }
-    ],
-    "groups": []
+    ]
   },
   "mobileLayout": {
     "widgetOnScreen": {
@@ -748,6 +299,7 @@
     }
   },
   "wabVersion": "2.11",
+  "isTemplateApp": true,
   "isWebTier": false,
   "httpProxy": {
     "useProxy": true,
@@ -758,7 +310,5 @@
   "dataSource": {
     "dataSources": {},
     "settings": {}
-  },
-  "appItemId": "507448df2d7a4f81ba9aedccfa81ebf2",
-  "logoLink": ""
+  }
 }
