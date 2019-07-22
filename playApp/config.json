@@ -77,7 +77,7 @@
       },
       {
         "position": {
-          "left": 155,
+          "left": 215,
           "top": 45,
           "relativeTo": "map"
         },
@@ -96,33 +96,48 @@
           "relativeTo": "map"
         },
         "placeholderIndex": 1,
-        "id": "_6"
+        "id": "_6",
+        "name": "Print",
+        "version": "2.11",
+        "closeable": true,
+        "uri": "widgets/Print/Widget",
+        "config": "configs/Print/config__6.json"
       },
       {
         "position": {
-          "left": 105,
+          "left": 135,
           "top": 45,
           "relativeTo": "map"
         },
         "placeholderIndex": 2,
-        "id": "_7"
+        "id": "_7",
+        "name": "About",
+        "version": "2.11",
+        "closeable": true,
+        "uri": "widgets/About/Widget",
+        "config": "configs/About/config__7.json"
       },
       {
         "position": {
-          "left": 205,
+          "left": 295,
           "top": 45,
           "relativeTo": "map"
         },
-        "placeholderIndex": 3,
-        "id": "_8"
+        "placeholderIndex": 1,
+        "id": "_8",
+        "name": "Share",
+        "version": "2.11",
+        "closeable": true,
+        "uri": "widgets/Share/Widget",
+        "config": "configs/Share/config__8.json"
       },
       {
         "position": {
-          "left": 255,
+          "left": 375,
           "top": 45,
           "relativeTo": "map"
         },
-        "placeholderIndex": 4,
+        "placeholderIndex": 1,
         "id": "_9"
       },
       {
@@ -255,7 +270,9 @@
         "version": "2.11",
         "id": "widgets_Legend_Widget_18",
         "name": "Legend",
-        "index": 0
+        "index": 0,
+        "icon": "configs\\Legend\\icon_widgets_Legend_Widget_18.png",
+        "config": "configs/Legend/config_widgets_Legend_Widget_18.json"
       },
       {
         "uri": "widgets/LayerList/Widget",

@@ -60,7 +60,6 @@ function(declare, _WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin,
       }else{
         html.setStyle(this.titleTR, 'display', 'none');
       }
-
       if(this.fields){
         this.setFields(this.fields);
       }

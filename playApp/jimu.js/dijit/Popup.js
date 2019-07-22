@@ -644,7 +644,7 @@ define([
           }
         }
         var node = html.create('div', {
-          'class': 'jimu-btn jimu-popup-action-btn jimu-float-trailing jimu-trailing-margin1 ' +
+          'class': 'jimu-btn jimu-popup-action-btn jimu-float-trailing jimu-trailing-margin1' +
             appendedClasses,
           'innerHTML': button.label,
           'tabindex': 0,
