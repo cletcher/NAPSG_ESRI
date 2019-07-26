@@ -1171,6 +1171,7 @@ define([
             },
 
             _updatePopup: function (newGeoms, point, scnPnt) {
+                
                 var defArray = [];
                 for (var i = 0; i < newGeoms.length; i++) {
                     var ng = newGeoms[i];
